@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*相对定位占位置*/
+.banner604 {
+	position: relative;
+}
+/*绝对定位不占位置*/
+/*绝对定位的盒子的宽度和自己内容一样宽 width给100%就和父亲一样宽*/
+.banner604 a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 604px;
+	background: url(../images/banner.jpg) no-repeat top center;
+
+}
+/*父亲没有高  孩子有浮动  父亲需要清除浮动*/
+.main {
+	position: relative;
+}
+.slider {
+	width: 730px;
+	height: 453px;
+	margin-left: 220px;
+	margin-top: 12px;
+	float: left;
+	position: relative;
+}
+.circle {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	margin-left: -66px;
+}
+.circle li {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #3e3e3e;
+	float: left;
+	text-align: center;
+	line-height: 18px;
+	color: white;
+	margin: 0 5px;
+	cursor: pointer;
+}
+.circle li.current {
+	cursor: pointer;
+	background-color: #b1191a;
+}
+.arrow-l, .arrow-r {
+	position: absolute;
+	width: 28px;
+	height: 62px;
+	top: 50%;
+	margin-top: -31px;
+	font: 500 18px/62px "simsun";
+	color: white;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+}
+.arrow-l {
+	left: 0;
+}
+.arrow-r {
+	right: 0;
+}
+.arrow-l:hover, .arrow-r:hover{
+	background: rgba(0,0,0,.4);
+	color:white;
+}
+.news {
+	width: 248px;
+	height: 451px;
+	border: 1px solid #e4e4e4;
+	float: right;
+	margin-top: 12px;
+}
+.jd-news {
+	height: 200px;
+	border-bottom: 1px dashed #e4e4e4;
+}
+.jd-news .dt, .lifeservice .dt{
+	height: 43px;
+	border-bottom: 1px dotted #e8e8e7;	
+	line-height: 43px;
+}
+.jd-news .dt h3,.lifeservice .dt h3{
+	float: left;
+	font: 14px/43px "微软雅黑";
+	color:  #666;
+	padding-left: 15px;
+}
+.jd-news .dt a {
+	float: right;
+	font: 13px/43px "simsun";
+	margin-right: 15px;
+}
+.jd-news .dd ul {
+	padding:8px 0 0 15px;
+
+}
+.jd-news .dd  li {
+	line-height: 28px;
+}
+.jd-news .dd span {
+	font-weight: 700;
+}
+.lifeservice {
+	height: 251px;
+	width: 248px;
+	overflow: hidden;
+}
+.lifeservice ul {
+	width: 252px;
+}
+.lifeservice .dd li {
+	height: 70px;
+	width: 62px;
+	border: 1px solid #e4e4e4;
+	float: left;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+.lifeservice li a {
+	display: block;
+	height: 70px;
+	text-align: center;
+	padding-top: 45px;
+	position: relative;
+}
+.lifeservice li i {
+	position: absolute;
+	top: 12px;
+	left: 18px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icon_lifeserv.png) no-repeat right top;
+}
+.lifeservice-icon2 a i {
+	background-position: right -25px;
+}
+.lifeservice-icon2 .song {
+	background: url(../images/song.png) no-repeat right top;
+}
+.todays {
+	position: relative;
+}
+.night {
+	margin: 10px 0 28px 0;
+}
+.night-r {
+	width: 1000px;
+	height: 150px;
+	background-color: #fff;
+	float: right;
+}
+.night-r ul {
+	width: 500%;
+}
+.night-r li {
+	float:  left;
+	margin-right: 1px;
+}
