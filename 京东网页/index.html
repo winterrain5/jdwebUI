@@ -6,8 +6,31 @@
 	<link rel="stylesheet" type="text/css" href="css/Base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript">
+		window.onload = function() {
+			var login = document.getElementById("login");
+			var mask = document.getElementById("mask");
+			var box = document.getElementById("box");
+			login.onclick = function() {
+				mask.style.display = "block";
+				box.style.display = "block";
+			}
+			var close_login = document.getElementById("close-login");
+			close_login.onclick = function() {
+				mask.style.display = "none";
+				box.style.display = "none";
+			}
+
+		}
+	</script>
 </head>
 <body>
+	<div id="mask">
+		
+	</div>
+	<div id="box">
+		<span id="close-login">✖️</span>
+	</div>
 	<!-- s=京东头部导航 -->
 	<div class="shortcut">
 		<div class="w">
@@ -20,7 +43,7 @@
 			<div class="fr">
 				<ul>
 					<li>
-						<a href="#" >你好，请登录</a> &nbsp;&nbsp;
+						<a href="javascript:;" id="login">你好，请登录</a> &nbsp;&nbsp;
 						<a href="" class="col-red">免费注册</a>
 					</li>
 					<li class="line"></li>
@@ -61,12 +84,20 @@
 	</div>
 	<!-- e=京东头部导航 -->
 	<!-- s= topbanner -->
-		<div class="topbanner">
+		<div class="topbanner" id="top-banner">
 			<div class="w tp">
 				<img src="images/topbanner.jpg" alt="">
-				<a href="javascript:;" class="close-banner"></a>
+				<a href="javascript:;" class="close-banner" id="jd-close"></a>
 			</div>
 		</div>
+		<script type="text/javascript">
+			 var jd_close = document.getElementById("jd-close");
+			 var top_banner = document.getElementById("top-banner");
+			 jd_close.onclick = function() {
+
+			 	top_banner.style.display = "none";
+			 }
+		</script>
 	<!-- e= topbanner -->
 	<!-- s= 搜索 -->
 	<div class="w clearfix">
