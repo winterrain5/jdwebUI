@@ -265,7 +265,7 @@
 					<h3>生活服务</h3>
 					<a href="#"></a>
 				</div>
-				<div class="dd">
+				<div class="dd" id="iconsprite">
 					<ul>
 						<li class="lifeservice-icon1">
 							<a href="#">
@@ -346,6 +346,19 @@
 							
 						</li>
 					</ul>
+					<script type="text/javascript">
+						// 找到所有的i
+						var iis = document.getElementById("iconsprite").getElementsByTagName("i");
+						var spans = document.getElementById("iconsprite").getElementsByTagName("span");
+						var len = iis.length;
+						var innertextArray = ["话费","机票","电影票","游戏","企业购","加油卡","酒店","火车票","众筹","理财","礼品卡","白条"];
+
+						spans[5].style.innerHTML = innertextArray[3];
+						for (var i = 0; i < len; i++) {
+							iis[i].style.backgroundPosition = "-25px "+(-i*25)+"px";
+							spans[i].innerText = innertextArray[i];
+						}
+					</script>
 				</div>
 			</div>
 		</div>
